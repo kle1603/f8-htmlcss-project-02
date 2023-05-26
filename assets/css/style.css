@@ -122,9 +122,12 @@ button {
     background: #143c3c;
 }
 
+.navbar__link--active {
+    color: #152427;
+}
+
 .navbar__link--active::after,
 .navbar__link:hover::after {
-    color: #152427;
     width: 16px;
     height: 2px;
     left: 0;
