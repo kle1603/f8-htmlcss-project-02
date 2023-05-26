@@ -88,10 +88,6 @@ button {
     justify-content: center;
 }
 
-.logo__brand {
-    margin-left: 12px;
-}
-
 .navbar__list {
     display: flex;
 }
