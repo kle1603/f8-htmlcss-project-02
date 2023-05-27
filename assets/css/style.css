@@ -42,6 +42,7 @@ button {
     line-height: var(--height);
     text-align: center;
     color: #ffffff;
+    transition: 0.25s;
 }
 
 .btn:hover {
@@ -131,4 +132,156 @@ button {
 
 .header-action {
     margin-left: 69px;
+}
+
+/* Hero */
+.hero {
+    margin-top: 60px;
+    display: flex;
+    /* align-items: center; */
+}
+
+.hero__content {
+    margin-top: 43px;
+    width: 35%;
+}
+
+.hero__heading {
+    max-width: 368px;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #152427;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #575d5e;
+}
+
+.hero-watch {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-watch__cta {
+    --height: 55px;
+}
+
+.hero-watch__link {
+    display: flex;
+    align-items: center;
+}
+
+.hero-watch__icon {
+    position: relative;
+    margin-left: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #83a17d;
+}
+
+.hero-watch__icon::before {
+    position: absolute;
+    content: "";
+    width: 49px;
+    height: 49px;
+    border: 4px solid #143c3c;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    /* transition: 0.25s; */
+}
+
+.hero-watch__icon:hover::before {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
+}
+
+.hero-watch__text {
+    margin-left: 15px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #152427;
+    transition: 0.25s;
+}
+
+.hero-watch__text:hover {
+    color: #83a17d;
+}
+
+.hero__media {
+    margin-left: auto;
+    padding-right: 25px;
+}
+
+.hero__images {
+    position: relative;
+    display: flex;
+    padding-bottom: 77px;
+    z-index: 0;
+    /* transition: 0.7s; */
+}
+
+.hero__images::after {
+    position: absolute;
+    top: 122px;
+    left: 156px;
+    z-index: -1;
+    content: "";
+    display: inline-block;
+    width: 340px;
+    height: 340px;
+    background: #4dbb9a;
+    filter: blur(137px);
+}
+
+.hero__img {
+    width: 202px;
+    height: 466px;
+    border-radius: 110px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.hero__img--middle {
+    position: absolute;
+    bottom: 0;
+    right: 222px;
+}
+
+.hero__images:hover .hero__img:not(.hero__img--middle) {
+    transform: translateY(77px);
+}
+
+.hero__images:hover .hero__img--middle {
+    transform: translateY(-77px);
+}
+
+.hero__img--first {
+    margin-right: 242px;
+}
+
+.section-decoration {
+    position: absolute;
 }
