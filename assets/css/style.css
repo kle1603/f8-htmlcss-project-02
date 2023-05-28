@@ -397,13 +397,17 @@ button {
 
 .section-sub-heading::before {
     position: absolute;
-    top: 4px;
+    top: 7px;
     left: 0;
     content: "";
     display: inline-block;
     width: 25px;
     height: 1px;
     background: #152427;
+}
+
+.service__sub-heading {
+    line-height: 1.62;
 }
 
 .service__heading {
@@ -542,10 +546,19 @@ button {
     object-fit: cover;
     box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
     border-radius: 210px;
+    transition: 1s;
 }
 
 .about__img--first {
     bottom: -90px;
+}
+
+.about__images:hover .about__img--second {
+    transform: translateY(90px);
+}
+
+.about__images:hover .about__img--first {
+    transform: translateY(-90px);
 }
 
 .about__decoration {
@@ -582,7 +595,12 @@ button {
     background: #ffffff;
     box-shadow: 0px 7px 54px rgba(154, 154, 154, 0.25);
     border-radius: 8px;
+    transition: 0.25s;
 }
+
+/* .about-designers:hover {
+    bottom: 20px;
+} */
 
 .about-designers__content {
     padding: 0 5px;
