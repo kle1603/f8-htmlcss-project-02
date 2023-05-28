@@ -96,6 +96,7 @@ button {
 .navbar__link {
     position: relative;
     padding: 19px;
+    display: inline-block;
     /* margin-left: 28px; */
     font-weight: 500;
     font-size: 1.8rem;
@@ -116,6 +117,7 @@ button {
     content: "";
     display: inline-block;
     width: 0;
+    height: 2px;
     background: #143c3c;
 }
 
@@ -284,6 +286,27 @@ button {
 
 .section-decoration {
     position: absolute;
+    z-index: 1;
 }
 
+.hero__decoration--bottom {
+    bottom: -80px;
+    left: 40px;
+}
 
+.hero__icon--circle-left {
+    position: absolute;
+    right: -45px;
+    bottom: 25px;
+}
+
+.hero__decoration--top {
+    top: -30px;
+    right: 270px;
+}
+
+.hero__icon--circle-right {
+    position: absolute;
+    left: -45px;
+    top: 2px;
+}
