@@ -787,7 +787,7 @@ button {
     position: relative;
     padding: 57px 30px 50px;
     border-radius: 33px;
-    transition: 0.25s;
+    transition: 0.5s;
 }
 
 .process-item::after {
