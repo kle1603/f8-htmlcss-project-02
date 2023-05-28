@@ -754,3 +754,137 @@ button {
 .about-item + .about-item {
     margin-top: 38px;
 }
+
+/* Process */
+.process {
+    padding: 36px 0;
+}
+
+.process__heading {
+    position: relative;
+    width: 477px;
+    margin-top: 20px;
+}
+
+.process__heading::after {
+    position: absolute;
+    right: -9px;
+    bottom: 18px;
+    content: "";
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background: #152427;
+}
+
+.process__list {
+    margin-top: 81px;
+}
+
+.process-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 57px 30px 50px;
+    border-radius: 33px;
+    transition: 0.25s;
+}
+
+.process-item::after {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    content: "";
+    display: inline-block;
+    width: 1131px;
+    height: 3px;
+    background: linear-gradient(
+        180deg,
+        #83a17d 4.17%,
+        rgba(131, 161, 125, 0) 36.46%
+    );
+}
+
+.process-item:hover {
+    background: #e2eddf;
+}
+
+.process-item:hover::after {
+    visibility: hidden;
+}
+
+.process-item__number {
+    font-weight: 600;
+    font-size: 7.2rem;
+    line-height: 0.72;
+    color: #143c3c;
+}
+
+.process-item__content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-left: 64px;
+}
+
+.process-item:first-child .process-item__content {
+    margin-left: 64px;
+}
+
+.process-item:nth-child(2) .process-item__content {
+    margin-left: 49px;
+}
+
+.process-item:last-child .process-item__content {
+    margin-left: 47px;
+}
+
+.process-item__img {
+    visibility: hidden;
+    position: absolute;
+    right: 92px;
+    bottom: 0;
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
+}
+
+.process-item__title {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #152427;
+}
+
+.process-item__link {
+    margin-top: 22px;
+    display: inline-block;
+    visibility: hidden;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #575d5e;
+    text-decoration: underline;
+}
+
+.process-item__desc {
+    width: 572px;
+    margin-left: auto;
+    margin-right: 41px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #7d8188;
+}
+
+.process-item:hover .process-item__link {
+    visibility: visible;
+}
+
+.process-item:hover .process-item__desc--hide {
+    visibility: hidden;
+}
+
+.process-item:hover .process-item__img {
+    visibility: visible;
+}
